@@ -42,6 +42,6 @@ go_send_tzsp running on 10.0.0.53. 10.0.0.53 is also running web server on 8000
 <img width="855" alt="image" src="https://github.com/user-attachments/assets/aec73322-d59a-43a4-84c6-8039989f08d4">
 
 Destination capture/parsing host 10.0.0.8 running wireshark. Its showing http request being sent from 10.0.0.61 to 10.0.0.53:8000
-<img width="1411" alt="image" src="https://github.com/user-attachments/assets/67828471-5809-4c70-8ad8-067a3c0f2bda">
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/53511f41-d651-4165-87f1-57739f0f7bed">
 
 
