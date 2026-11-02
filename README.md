@@ -20,6 +20,7 @@ I picked go because I can't write code in C/C++ and I can't put python on captur
 # Building
 - Clone the repo
 - Cd into the repo folder
+- install libpcap `apt install libpcap-dev`
 - run `go mod init go_send_tzsp`
 - run `go mod tidy`
 - run `go build .`
