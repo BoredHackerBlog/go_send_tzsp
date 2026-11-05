@@ -49,6 +49,27 @@ RestartSec=5s
 WantedBy=multi-user.target
 ```
 
+OR
+
+Try this: there is some issue with mtu size for the config above. This was used in one of the articles i read.
+
+```
+[Unit]
+Description=replay TZSP packets
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/sh -c '/usr/bin/tzsp2pcap -f | /usr/bin/tcpreplay-edit --topspeed --mtu=$(cat /sys/class/net/tzsp0/mtu) --mtu-trunc -i tzsp0 -'
+
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
+```
+
 run the following:
 ```
 sudo systemctl daemon-reload
