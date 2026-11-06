@@ -73,8 +73,8 @@ WantedBy=multi-user.target
 run the following:
 ```
 sudo systemctl daemon-reload
-sudo systemctl start sendtzsp
-sudo systemctl enable sendtzsp
+sudo systemctl start tzspreplay
+sudo systemctl enable tzspreplay
 ```
 
 then have suricata monitor tzsp0.
